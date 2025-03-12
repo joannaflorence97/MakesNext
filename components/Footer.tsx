@@ -1,0 +1,30 @@
+import Instagram from '@/assets/instagram.svg';
+import YouTube from '@/assets/youtube.svg';
+
+export function Footer() {
+  return (
+    <footer className="mt-12 text-center">
+      <div className="flex justify-center space-x-4 tracking-tight my-3">
+        <a href="https://instagram.com/joannaflorencemakes">
+          <Instagram
+            width={26}
+            height={26}
+            className="hover:fill-[#FF0069] duration-500"
+          />
+        </a>
+        <a href="https://www.etsy.com/shop/joannaflorencemakes/">
+          <YouTube
+            width={26}
+            height={26}
+            className="hover:fill-[#FF0000] duration-500"
+          />
+        </a>
+      </div>
+      <div className="flex justify-center space-x-4 tracking-tight mb-3">
+        <p>
+          &copy; Copyright Joanna Florence Laikin 2025. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
+}
