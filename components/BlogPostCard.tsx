@@ -22,14 +22,13 @@ export function BlogPostCard({ metadata }: BlogPostCardProps) {
           />
         </div>
         <div className="p-8">
-          <div className="flex items-center justify-between mb-6">
+          {/* <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3">
-              {/* Avatar goes here */}
               <span className="text-sm font-medium text-gray-700">
                 Joanna Laikin
               </span>
             </div>
-          </div>
+          </div> */}
           <h2 className="text-2xl font-semibold mb-3 group-hover:text-gray-600 transition-colors duration-200">
             {metadata.title}
           </h2>
