@@ -10,15 +10,16 @@ export function BlogPostCard({ metadata }: BlogPostCardProps) {
   return (
     <Link href={`/blog/${metadata.slug}`} key={metadata.slug} className="group">
       <article className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-        <div className="relative overflow-hidden h-72">
+        <div className="relative w-full">
           <Image
             src={
               metadata.image ||
               'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=2940&auto=format&fit=crop'
             }
             alt={metadata.title}
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-500"
+            width={1200} // Pick appropriate dimensions/aspect ratio
+            height={675}
+            className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
           />
         </div>
         <div className="p-8">
