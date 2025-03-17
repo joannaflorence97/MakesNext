@@ -48,7 +48,7 @@ export function PostFilter({ categories, posts }: PostFilterProps) {
         </div>
       </div>
 
-      <AnimatePresence mode="wait">
+      <AnimatePresence initial={false} mode="wait">
         <motion.div
           key={selectedCategory}
           initial={{ opacity: 0, y: 20 }}
