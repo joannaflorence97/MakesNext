@@ -21,7 +21,7 @@ export function PostFilter({ categories, posts }: PostFilterProps) {
   return (
     <>
       <div className="mb-8 overflow-x-auto">
-        <div className="flex space-x-2 min-w-max">
+        <div className="flex space-x-2 justify-center flex-wrap">
           <button
             onClick={() => setSelectedCategory('All')}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
