@@ -1,19 +1,33 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { X, Menu } from 'lucide-react';
+import Jo from '../content/images/lyra3.jpg';
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-gray-200 border-b border-b-gray-400 sticky top-0 z-50">
+    <header className="bg-white py-3.5 sticky top-0 z-50 shadow-nav">
       <div className="container mx-auto px-4">
         <nav className="relative flex items-center justify-between h-16">
-          <Link href="/" className="text-2xl font-bold tracking-tight">
-            Joanna Florence Makes
-          </Link>
+          <div className="flex gap-2.5 items-center">
+            <Image
+              src={Jo}
+              alt="Joanna Florence"
+              width={50}
+              height={50}
+              className="rounded-[50%]"
+            />
+            <Link
+              href="/"
+              className="md:text-2xl text-xl font-bold tracking-tight"
+            >
+              Joanna Florence Makes
+            </Link>
+          </div>
 
           {/* Mobile menu button */}
           <button
