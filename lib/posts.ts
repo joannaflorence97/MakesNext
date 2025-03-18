@@ -9,6 +9,7 @@ export type PostMetadata = {
   slug: string;
   image: string;
   excerpt: string;
+  categories: string[];
 };
 
 export async function getAllPosts(): Promise<PostMetadata[]> {
