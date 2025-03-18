@@ -1,10 +1,10 @@
 import { Header } from '@/components/Header';
 import './globals.css';
 import type { Metadata } from 'next';
-import { Fraunces } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import { Footer } from '@/components/Footer';
 
-const fraunces = Fraunces({ subsets: ['latin'] });
+const poppins = Poppins({ weight: ['300', '400', '500', '600', '700'] });
 
 export const metadata: Metadata = {
   title: {
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${fraunces.className}`}>
+    <html lang="en" className={`${poppins.className}`}>
       <body className="antialiased tracking-tight">
         <Header />
         <div className="min-h-screen flex flex-col justify-between pt-0 md:pt-8 p-8 dark:bg-zinc-950 bg-white text-gray-900 dark:text-zinc-200">
