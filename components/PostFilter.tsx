@@ -16,7 +16,7 @@ export function PostFilter({ categories, posts }: PostFilterProps) {
   const filteredPosts =
     selectedCategory === 'All'
       ? posts
-      : posts.filter(post => post.slug.includes(selectedCategory));
+      : posts.filter(post => post.categories.includes(selectedCategory));
 
   return (
     <>
