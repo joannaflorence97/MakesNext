@@ -9,7 +9,14 @@ export default async function Home() {
     <>
       <ImageCarousel />
       <PostFilter
-        categories={['amelia', 'dress', 'lyra', 'joni']}
+        categories={[
+          'Beginners',
+          'Patterns',
+          'Hacks',
+          'Tools',
+          'Reviews',
+          'Life',
+        ]}
         posts={posts}
       />
     </>
