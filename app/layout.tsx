@@ -25,13 +25,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.className}`}>
       <body className="antialiased tracking-tight">
-        <Header />
-        <div className="min-h-screen flex flex-col justify-between pt-0 md:pt-8 p-8 dark:bg-zinc-950 bg-white text-gray-900 dark:text-zinc-200">
-          <main className="max-w-[80ch] mx-auto w-full space-y-6">
-            {children}
-          </main>
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <div className="flex flex-col flex-1 justify-between pt-0 md:pt-8 p-8 dark:bg-zinc-950 bg-white text-gray-900 dark:text-zinc-200">
+            <main className="max-w-[80ch] mx-auto w-full space-y-6">
+              {children}
+            </main>
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </body>
     </html>
   );
