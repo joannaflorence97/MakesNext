@@ -40,7 +40,7 @@ export default function About() {
               since. I am largely self-taught, having learnt a lot through the
               wonderful online sewing community.
             </p>
-            <p className="text-gray-600 text-base mb-4">
+            <p className="text-gray-600 text-base">
               For the latest updates, follow my Instagram account{' '}
               <a href="https://www.instagram.com/joannaflorencemakes">
                 @joannaflorencemakes
