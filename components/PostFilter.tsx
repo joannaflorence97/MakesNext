@@ -55,7 +55,7 @@ export function PostFilter({ categories, posts }: PostFilterProps) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-8"
+          className="columns-1 sm:columns-2 gap-4"
         >
           {filteredPosts.map(post => (
             <motion.div
@@ -70,6 +70,7 @@ export function PostFilter({ categories, posts }: PostFilterProps) {
               //     transition: { delay: 0.5 },
               //   }}
               layout
+              className="mb-4"
             >
               <BlogPostCard key={post.slug} metadata={post} />
             </motion.div>
