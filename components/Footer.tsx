@@ -1,9 +1,10 @@
 import Instagram from '@/assets/instagram.svg';
 import YouTube from '@/assets/youtube.svg';
+import { format } from 'date-fns';
 
 export function Footer() {
   return (
-    <footer className="mt-12 text-center">
+    <footer className="py-12 text-center">
       <div className="flex justify-center space-x-4 tracking-tight my-3">
         <a href="https://instagram.com/joannaflorencemakes">
           <Instagram
@@ -21,8 +22,9 @@ export function Footer() {
         </a>
       </div>
       <div className="flex justify-center space-x-4 tracking-tight mb-3">
-        <p>
-          &copy; Copyright Joanna Florence Laikin 2025. All rights reserved.
+        <p className="text-sm text-primary font-semibold uppercase">
+          &copy; Copyright Joanna Florence Laikin {format(new Date(), 'yyyy')}.
+          All rights reserved.
         </p>
       </div>
     </footer>
