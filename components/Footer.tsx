@@ -1,6 +1,5 @@
 import Instagram from '@/assets/instagram.svg';
 import YouTube from '@/assets/youtube.svg';
-import { format } from 'date-fns';
 
 export function Footer() {
   return (
@@ -23,7 +22,7 @@ export function Footer() {
       </div>
       <div className="flex justify-center space-x-4 tracking-tight mb-3">
         <p className="text-sm text-primary font-semibold uppercase md:px-0 px-10">
-          &copy; Copyright Joanna Florence Laikin {format(new Date(), 'yyyy')}.
+          &copy; Copyright Joanna Florence Laikin {new Date().getFullYear()}.
           All rights reserved.
         </p>
       </div>
