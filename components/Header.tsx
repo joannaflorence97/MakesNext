@@ -10,7 +10,7 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white py-3.5 sticky top-0 z-50 shadow-nav">
+    <header className="bg-background py-3.5 sticky top-0 z-50 shadow-nav">
       <div className="container mx-auto px-4">
         <nav className="relative flex items-center justify-between h-16">
           <div className="flex gap-2.5 items-center">
@@ -23,7 +23,7 @@ export function Header() {
             />
             <Link
               href="/"
-              className="md:text-2xl text-xl font-bold tracking-tight"
+              className="md:text-2xl text-xl font-bold tracking-tight text-primary"
             >
               Joanna Florence Makes
             </Link>

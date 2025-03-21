@@ -31,14 +31,14 @@ export function BlogPostCard({ metadata }: BlogPostCardProps) {
               </span>
             </div>
           </div> */}
-          <h2 className="text-2xl font-semibold mb-1 group-hover:text-gray-600 transition-colors duration-200">
+          <h2 className="text-2xl font-semibold mb-1 group-hover:text-gray-600 transition-colors duration-200 text-primary">
             {metadata.title}
           </h2>
           {/* <p className="text-gray-600">
             {format(new Date(metadata.date), 'do MMM yyyy')}
           </p> */}
           {/* <hr className="text-gray-300 my-2"></hr> */}
-          <p className="text-gray-600 mb-0 line-clamp-2 text-justify">
+          <p className="text-gray-500 mb-0 line-clamp-2 text-justify">
             {metadata.excerpt}
           </p>
           <hr className="text-gray-200 my-3"></hr>
@@ -50,7 +50,7 @@ export function BlogPostCard({ metadata }: BlogPostCardProps) {
               {metadata.categories.map(category => (
                 <span
                   key={category}
-                  className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded-full"
+                  className="text-xs px-2 py-1 bg-primary text-white rounded-full"
                 >
                   {category}
                 </span>

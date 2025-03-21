@@ -26,8 +26,8 @@ export function PostFilter({ categories, posts }: PostFilterProps) {
             onClick={() => setSelectedCategory('All')}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
               selectedCategory === 'All'
-                ? 'bg-gray-900 text-white'
-                : 'bg-white text-gray-600 hover:bg-gray-100'
+                ? 'bg-primary text-white'
+                : 'bg-background text-gray-600 hover:bg-secondary'
             }`}
           >
             All
@@ -38,8 +38,8 @@ export function PostFilter({ categories, posts }: PostFilterProps) {
               onClick={() => setSelectedCategory(category)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
                 selectedCategory === category
-                  ? 'bg-gray-900 text-white'
-                  : 'bg-white text-gray-600 hover:bg-gray-100'
+                  ? 'bg-primary text-white'
+                  : 'bg-background text-gray-600 hover:bg-secondary'
               }`}
             >
               {category}
