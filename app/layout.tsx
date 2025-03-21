@@ -27,7 +27,7 @@ export default function RootLayout({
       <body className="antialiased tracking-tight">
         <div className="flex flex-col min-h-screen">
           <Header />
-          <div className="flex flex-col flex-1 justify-between pt-0 md:pt-8 p-8 bg-background text-gray-900">
+          <div className="flex flex-col flex-1 justify-between p-8 bg-background text-gray-900">
             <main className="max-w-[80ch] mx-auto w-full space-y-6">
               {children}
             </main>
