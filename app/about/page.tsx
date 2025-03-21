@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import joanna from '../../assets/joanna.jpg';
 
-export default async function About() {
+export default function About() {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-[1fr_1.25fr] lg:grid-cols-[1fr_1.5fr] gap-10 items-center py-8 max-w-7xl mx-auto">
