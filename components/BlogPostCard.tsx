@@ -24,20 +24,9 @@ export function BlogPostCard({ metadata }: BlogPostCardProps) {
           />
         </div>
         <div className="p-8">
-          {/* <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center space-x-3">
-              <span className="text-sm font-medium text-gray-700">
-                Joanna Laikin
-              </span>
-            </div>
-          </div> */}
           <h2 className="text-2xl font-semibold mb-1 group-hover:text-gray-600 transition-colors duration-200 text-primary">
             {metadata.title}
           </h2>
-          {/* <p className="text-gray-600">
-            {format(new Date(metadata.date), 'do MMM yyyy')}
-          </p> */}
-          {/* <hr className="text-gray-300 my-2"></hr> */}
           <p className="text-gray-500 mb-0 line-clamp-2 text-justify">
             {metadata.excerpt}
           </p>
