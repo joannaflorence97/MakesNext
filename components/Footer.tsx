@@ -12,7 +12,7 @@ export function Footer() {
             className="hover:fill-[#FF0069] duration-500"
           />
         </a>
-        <a href="https://www.etsy.com/shop/joannaflorencemakes/">
+        <a href="http://youtube.com/@joannaflorencemakes/">
           <YouTube
             width={26}
             height={26}
