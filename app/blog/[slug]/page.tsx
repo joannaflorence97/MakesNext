@@ -11,8 +11,12 @@ export default async function Page({
 
   return (
     <>
-      <h1>{metadata.title}</h1>
-      {format(new Date(metadata.date), 'do MMM yyyy')}
+      <h1 className="text-3xl font-bold pt-12 mb-0 text-primary">
+        {metadata.title}
+      </h1>
+      <p className="text-sm text-gray-500 font-medium">
+        {format(new Date(metadata.date), 'do MMM yyyy')}
+      </p>
       <Post />
     </>
   );
