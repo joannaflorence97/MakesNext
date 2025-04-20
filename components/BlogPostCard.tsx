@@ -27,9 +27,7 @@ export function BlogPostCard({ metadata }: BlogPostCardProps) {
           <h2 className="text-2xl font-semibold mb-1 group-hover:text-gray-600 transition-colors duration-200 text-primary">
             {metadata.title}
           </h2>
-          <p className="text-gray-500 mb-0 line-clamp-2 text-justify">
-            {metadata.excerpt}
-          </p>
+          <p className="text-gray-500 mb-0 line-clamp-2">{metadata.excerpt}</p>
           <hr className="text-gray-200 my-3"></hr>
           <div className="flex items-center justify-between">
             <div className="text-sm text-gray-500 font-medium">
