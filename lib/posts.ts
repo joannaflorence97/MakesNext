@@ -12,6 +12,12 @@ export type PostMetadata = {
   categories: string[];
 };
 
+export async function getPostById(slug: string) {
+  const { default: Post, metadata } = await import(`@/content/${slug}.mdx`);
+
+  return {metadata, Post}
+}
+
 export async function getAllPosts(): Promise<PostMetadata[]> {
   const files = fs
     .readdirSync(postsDirectory)
