@@ -11,15 +11,15 @@ type BlockquoteProps = ComponentPropsWithoutRef<'blockquote'>;
 
 const components = {
   h1: (props: HeadingProps) => (
-    <h1 className="font-medium pt-12 mb-0" {...props} />
+    <h1 className="text-xl font-bold pt-12 mb-4 text-primary" {...props} />
   ),
   h2: (props: HeadingProps) => (
-    <h2 className="text-gray-800 font-medium mt-8 mb-3" {...props} />
+    <h2 className="text-gray-800 text-md mt-8 mb-3" {...props} />
   ),
   h3: (props: HeadingProps) => (
-    <h3 className="text-gray-800 font-medium mt-8 mb-3" {...props} />
+    <h3 className="text-gray-800 text-md mt-8 mb-3" {...props} />
   ),
-  h4: (props: HeadingProps) => <h4 className="font-medium" {...props} />,
+  h4: (props: HeadingProps) => <h4 className="text-md" {...props} />,
   p: (props: ParagraphProps) => (
     <p className="text-gray-800 leading-snug" {...props} />
   ),
@@ -31,10 +31,10 @@ const components = {
   ),
   li: (props: ListItemProps) => <li className="pl-1" {...props} />,
   em: (props: ComponentPropsWithoutRef<'em'>) => (
-    <em className="font-medium" {...props} />
+    <em className="text-md" {...props} />
   ),
   strong: (props: ComponentPropsWithoutRef<'strong'>) => (
-    <strong className="font-medium" {...props} />
+    <strong className="text-md" {...props} />
   ),
   a: ({ href, children, ...props }: AnchorProps) => {
     const className = 'text-blue-500 hover:text-blue-700';
