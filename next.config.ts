@@ -6,7 +6,7 @@ const withMDX = createMDX({
 });
 
 const nextConfig: NextConfig = {
-  basePath: process.env.GITHUB_ACTIONS ? '/MakesNext' : '',
+  basePath: process.env.GITHUB_ACTIONS ? '' : '',
   images: {
     unoptimized: true,
   },
