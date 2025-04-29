@@ -10,10 +10,10 @@ export default async function Home() {
         categories={[
           'Beginners',
           'Patterns',
-          'Hacks',
-          'Tools',
+          // 'Hacks',
+          // 'Tools',
           'Reviews',
-          'Life',
+          // 'Life',
         ]}
         posts={posts}
       />
