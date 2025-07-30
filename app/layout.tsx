@@ -26,7 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.className}`}>
       <head>
-        <AdSense pId="ca-pub-2155859976545968" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2155859976545968"
+          crossOrigin="anonymous"
+        ></script>
       </head>
       <body className="antialiased tracking-tight">
         <div className="flex flex-col min-h-screen">
