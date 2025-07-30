@@ -3,6 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import { Footer } from '@/components/Footer';
+import AdSense from '@/components/AdSense';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -24,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.className}`}>
+      <head>
+        <AdSense pId="ca-pub-2155859976545968" />
+      </head>
       <body className="antialiased tracking-tight">
         <div className="flex flex-col min-h-screen">
           <Header />
