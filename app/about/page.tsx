@@ -46,6 +46,13 @@ export default function About() {
                 @joannaflorencemakes
               </a>
             </p>
+            <br></br>
+            <p className="text-gray-600 text-base">
+              <a>
+                Any questions or comments? Please email me at
+                hi@joannaflorencemakes.co.uk.
+              </a>
+            </p>
           </div>
         </motion.div>
       </div>
